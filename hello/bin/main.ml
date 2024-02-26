@@ -1,1 +1,1 @@
-let () = Printf.printf "%s\n" Hello.En.v
+let () = Dream.(run (router [ get "/" (fun (_ : request) -> html Hello.En.v) ]))
